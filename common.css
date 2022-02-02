@@ -1,6 +1,21 @@
 /*Common CSS to be shown on all versions (mobile/desktop)*/
 .productBasketDiv{
-    width: 8em;
+    width: 60%;
+    margin-left: 20%;
+}
+
+.productBasketDiv input
+{
+    position: relative;
+    width: 25%;
+    margin-bottom: 10px;
+    text-align: center;
+
+}
+
+.productBasketDiv .adjustUp
+{
+    margin-left: 0px;
 }
 
 button{
@@ -15,6 +30,7 @@ button{
     height: 8rem;
     object-fit: cover;
     vertical-align: middle;
+    border-radius: 5px;
 }
 .shop-product-desc{
     display:none;
@@ -224,11 +240,10 @@ html{
     /* color: var(--colour-6); */
 }
 
-.adjustDiv
+/* .adjustDiv
 {
-    width: 70%;
-    margin: 5%;
-}
+    display: block;
+} */
 
 #basket{
     position:absolute;

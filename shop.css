@@ -10,6 +10,13 @@
 .shop-product-price{
     font-weight: bold;
     text-align: center;
+    margin-left:15%;
+    margin-top: 10px;
+}
+
+.shop-product-units
+{
+    margin-top: 10px;
 }
 
 h1{
