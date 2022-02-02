@@ -145,7 +145,20 @@ var cardTemplate = `<div class="shop-product card" data-num="[EVEGPRODUCT#]">
 
   // Fixed this so it now sorts by price
   function sortFunction(a,b){
-    return a.price - b.price;
+    /** Sorting the product by price */
+    // return a.price - b.price;
+
+    /** Sorting the product by name */
+    if(a.name < b.name) 
+    {
+      return -1;
+    }
+    if(a.name > b.name) 
+    {
+      return 1;
+    }
+    return 0;
+
   }
 
   //Redraw all products based on the card template
