@@ -6,7 +6,8 @@
 button{
     background-color: var(--colour-2);
     color:var(--colour-1);
-    font-size: 100%;
+    font-size: 40%;
+    margin-left: 10%;
 }
 
 .shop-product-img img{
@@ -223,6 +224,12 @@ html{
     /* color: var(--colour-6); */
 }
 
+.adjustDiv
+{
+    width: 70%;
+    margin: 5%;
+}
+
 #basket{
     position:absolute;
     display:none;
@@ -258,7 +265,7 @@ html{
     bottom: 0px;
     background-color: hsl(var(--colour-4-h), var(--colour-4-s), var(--colour-4-l));
     padding: 20px;
-    /* display: none; */
+    display: none;
 }
 
 #acceptCookies{
