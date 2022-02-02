@@ -177,26 +177,26 @@ var cardTemplate = `<div class="shop-product card" data-num="[EVEGPRODUCT#]">
     // return b.price - a.price;
 
     // /** Sorting the product by name A to Z*/
-    if(a.name < b.name) 
-    {
-      return -1;
-    }
-    if(a.name > b.name) 
-    {
-      return 1;
-    }
-    return 0;
-
-    // /** Sorting the product by name Z to A*/
     // if(a.name < b.name) 
-    // {
-    //   return 1;
-    // }
-    // if(a.name > b.name) 
     // {
     //   return -1;
     // }
+    // if(a.name > b.name) 
+    // {
+    //   return 1;
+    // }
     // return 0;
+
+    /** Sorting the product by name Z to A*/
+    if(a.name < b.name) 
+    {
+      return 1;
+    }
+    if(a.name > b.name) 
+    {
+      return -1;
+    }
+    return 0;
 
   }
 
