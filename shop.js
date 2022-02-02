@@ -134,21 +134,49 @@ var cardTemplate = `<div class="shop-product card" data-num="[EVEGPRODUCT#]">
   }
 
   function filterFunction(a){
-    /*This demonstrates how to filter based on the search term*/
-    return a.name.toLowerCase().includes(searchStr.toLowerCase());
 
-    //If you wanted to just filter based on fruit/veg you could do something like this:
+    /** Without any filter */
+    return true;
+
+
+    /*Filter based on Popularity*/
+    // return a.name.toLowerCase().includes(searchStr.toLowerCase());
+
+    /** Filter based on Types. */
     // return a.type == 'veg';
     // return a.type == 'fruit';
-    // return true;
+    // return a.type == 'other';
+    // return a.type == 'dairy';
+    
+
+    /** Price range filter */
+    // if (100 < a.price && a.price < 200)
+    // {
+    //   return true;
+    // }
+
+    /** combination of price and type */
+    // if (100 < a.price && a.price < 200 && a.type == "fruit")
+    // {
+    //   return true;
+    // }
   }
 
   // Fixed this so it now sorts by price
-  function sortFunction(a,b){
-    /** Sorting the product by price */
+  function sortFunction(a,b)
+  {
+
+    /** Sorting based on popularity */
+    // return a.name.toLowerCase().includes(searchStr.toLowerCase());
+
+
+    // /** Sorting the product by price Low to High*/
     // return a.price - b.price;
 
-    /** Sorting the product by name */
+    // /** Sorting the product by price High to Low*/
+    // return b.price - a.price;
+
+    // /** Sorting the product by name A to Z*/
     if(a.name < b.name) 
     {
       return -1;
@@ -158,6 +186,17 @@ var cardTemplate = `<div class="shop-product card" data-num="[EVEGPRODUCT#]">
       return 1;
     }
     return 0;
+
+    // /** Sorting the product by name Z to A*/
+    // if(a.name < b.name) 
+    // {
+    //   return 1;
+    // }
+    // if(a.name > b.name) 
+    // {
+    //   return -1;
+    // }
+    // return 0;
 
   }
 
